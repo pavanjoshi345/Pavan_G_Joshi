@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - DevFolio Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+<script type="text/javascript">
+  function submitbtn() {
+  // Get form values
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const subject = document.getElementById("subject").value.trim();
+  const message = document.getElementById("message").value.trim();
+  const alertBox = document.getElementById("alertBox");
+  const form = document.getElementById("contactForm");
+
+  // Basic validation
+  if (name === "" || email === "" || subject === "" || message === "") {
+    alertBox.style.display = "block";
+    alertBox.style.backgroundColor = "red";
+    alertBox.innerHTML = "⚠️ Please fill out all fields!";
+  } else {
+    alertBox.style.display = "block";
+    alertBox.style.backgroundColor = "green";
+    alertBox.innerHTML = "✅ Message has been sent successfully!";
+
+    // Clear form fields after success
+    form.reset();
+  }
+
+  // Hide alert after 3 seconds
+  setTimeout(() => {
+    alertBox.style.display = "none";
+  }, 3000);
+}
+
+</script>
+
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">PAVAN GOPAL JOSHI</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/pavan.JPEG" alt="" data-aos="fade-in">
+
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+        <h2>I am Pavan Gopal Joshi</h2>
+        <p><span class="typed" data-typed-items="Software Engineer"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-md-6">
+
+            <div class="row justify-content-between gy-4">
+              <div class="col-lg-5">
+                <img src="assets/img/my_profile.JPEG" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-7 about-info">
+                <p><strong>Name: </strong> <span>Pavan Gopal Joshi</span></p>
+                <p><strong>Profile: </strong> <span>Software Developer</span></p>
+                <p><strong>Email: </strong> <span>pavanjoshi5685@gmail.com</span></p>
+                <p><strong>Phone: </strong> <span>9356706409</span></p>
+				<p><strong>Experience: </strong> <span>1Year+ in IT Software Development</span></p>
+              </div>
+            </div>
+
+            <div class="skills-content skills-animation">
+
+              <h5>Skills</h5>
+
+              <div class="progress">
+                <span class="skill"><span>Java</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>JavaScript</span> <i class="val">78%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>React JS</span> <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>SQL/MySQL</span> <i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="about-me">
+              <h4>About me</h4>
+              <p>
+                I am Pavan Gopal Joshi, a passionate and dedicated Software Developer with over 1 year of experience
+				in IT software development. I specialize in building efficient, scalable, and user-friendly applications 
+				using Java, JavaScript, React JS, and SQL/MySQL.
+              </p>
+              <p>
+               I have hands-on experience in both frontend and backend development, allowing me to deliver complete end-to-end solutions.
+			   I enjoy transforming complex business requirements into innovative and reliable software solutions.
+              </p>
+              <p>
+               My focus is on writing clean, optimized code, maintaining high performance, and continuously 
+			   learning emerging technologies to improve my craft.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>Dedicated and results-driven Software Developer with 1+ year of experience.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Sumary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Pavan Joshi</h4>
+              <p><em>Innovative and detail-oriented Software Developer with 1+ year of experience in designing, developing, and implementing dynamic web and software solutions. Skilled in Java, JavaScript, React JS, and SQL/MySQL, with a strong focus on writing clean, efficient, and maintainable code.</em></p>
+              <ul>
+                <li>Current Location :-  Pune Maharashtra</li>
+                <li>9356706409</li>
+                <li>pavanjoshi8556@gmail.com</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Master of Computer Application</h4>
+              <h5>2025 - 2027</h5>
+              <p><em>Shree Sant Gadget Baba College of Engineering Bhusawal</em></p>
+              <p>Pursuing a Master of Computer Applications with a strong emphasis on software engineering, web technologies, database management, and system design. Developing in-depth technical knowledge and practical skills in programming, application development, and modern IT tools to build innovative and efficient software solutions.</p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Bachelor of Computer Application</h4>
+              <h5>2022 - 2025</h5>
+              <p><em>Institute of Management & Research, Jamner</em></p>
+              <p>During my BCA, I gained strong knowledge in various programming and web technologies such as HTML, CSS, JavaScript, Core Java, and SQL, along with other essential tools and frameworks. This course helped me build a solid foundation in software development, database management, and web application design.</p>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Jr Java Developer</h4>
+              <h5>2024 - Present</h5>
+              <p><em>Pune Maharashtra </em></p>
+              <ul>
+                <li>As a Junior Java Developer with over 1 year of experience, I have worked on developing and maintaining web applications using JSP, Servlets, and Spring Boot on the backend, along with React JS on the frontend.</li>
+                <li>My responsibilities included designing RESTful APIs, integrating frontend and backend modules, managing databases using SQL/MySQL, and ensuring clean, efficient, and scalable code. </li>
+                <li>I collaborated closely with senior developers and cross-functional teams to deliver high-quality software solutions within deadlines.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+           
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Assisting in deploying web applications and Software Development & managing code using tools like Git and GitHub for version control and collaboration.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                  <i class="bi bi-code-slash"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Web Development </h3>
+              </a>
+           <p>I build fast, responsive, and modern websites using the latest web technologies like HTML, CSS, JavaScript, and frameworks such as React and Next.js.</p>               </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-server"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>BackEnd Development </h3>
+              </a>
+        <p>Develop scalable and secure server-side applications and RESTful APIs using Node.js, Express, and databases like MongoDB or PostgreSQL.</p>
+             </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-plug"></i>
+              </div>
+              <a href="#" class="stretched-link">
+               <h3>API Integration</h3>
+              </a>
+    <p>Integrate third-party APIs such as payment gateways, maps, and authentication systems seamlessly into web applications, ensuring secure and efficient data communication between services.</p>
+
+			   </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-database"></i>
+              </div>
+              <a href="#" class="stretched-link">
+                <h3>Database Design & Management</h3>
+              </a>
+                  <p>Design efficient and scalable database structures, optimize queries, and manage data securely using SQL and NoSQL technologies like MySQL, PostgreSQL, and MongoDB.</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-calendar4-week"></i>
+              </div>
+				<i class="bi bi-brush"></i>
+                 <h3>UI/UX Design Integration</h3>
+              </a>
+          <p>Transform Figma or Adobe XD designs into responsive, pixel-perfect web interfaces. Focused on delivering seamless user experiences with clean, modern layouts.</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-lightbulb"></i>
+              </div>
+              <a href="#" class="stretched-link">
+               <h3>Software Development Consulting</h3>
+              </a>
+                <p>Provide expert guidance in planning, designing, and implementing software solutions. Help clients choose the right technologies and build scalable, maintainable systems.</p>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section accent-background">
+
+      <img src="assets/img/stats-bg.jpg" alt="" data-aos="fade-in">
+
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="108" data-purecounter-duration="0" class="purecounter">108</span>
+              <p>Clients</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="21" data-purecounter-duration="0" class="purecounter">38</span>
+              <p>Projects</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="710" data-purecounter-duration="0" class="purecounter">710</span>
+              <p>Hours Of Support</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="23" data-purecounter-duration="0" class="purecounter">23</span>
+              <p>Awards</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+   
+
+  
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Pricing</h2>
+           <p>Affordable and transparent pricing for various services and activities.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 gx-lg-5">
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>College Team Lead</h3>
+              <h4>$14.00</h4>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Coding Competition</h3>
+              <h4>$23.00</h4>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>College Sports</h3>
+              <h4>$20.00</h4>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Technical Projects</h3>
+              <h4>$12.00</h4>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Web Applications</h3>
+              <h4>$5.00</h4>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-6">
+            <div class="pricing-item d-flex justify-content-between">
+              <h3>Public Speaking</h3>
+              <h4>$03.00</h4>
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="content px-xl-5">
+              <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
+    
+            </div>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="faq-container">
+              <div class="faq-item faq-active">
+                <h3><span class="num">1.</span> <span>How do you approach solving complex software or coding problems?</span></h3>
+                <div class="faq-content">
+                  <p>I usually break the problem into smaller parts, analyze edge cases, and design a step-by-step solution before coding. I also use debugging tools, logs, and testing frameworks to verify my logic.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">2.</span> <span>Which programming languages and frameworks do you use most often?</span></h3>
+                <div class="faq-content">
+					<p> I primarily work with Java, JavaScript, and Node.js. For web development, I use frameworks like Spring Boot, React, and Express, along with databases such as MySQL and MongoDB. </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">3.</span> <span>How do you make sure your applications are secure and efficient?</span></h3>
+                <div class="faq-content">
+			 <p> I follow best practices like validating input, using environment variables for sensitive data, optimizing queries, and implementing proper authenti </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">4.</span> <span>Can you explain your process for developing a new project from scratch?
+             </span></h3>
+			 
+                <div class="faq-content">
+                  <p> I start with requirement gathering and system design, then set up the project structure, develop the backend and frontend, integrate APIs, and finally test and deploy the application. </p>                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">5.</span> <span>Do you collaborate with teams or work on projects independently?</span></h3>
+                <div class="faq-content">
+                  <p> I’ve done both. I enjoy collaborating on GitHub and using tools like Git, Jira, and Slack for teamwork, but I’m also comfortable managing solo projects from start to finish.  </p>
+				  </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section accent-background">
+
+      <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/my_profile.JPEG" class="testimonial-img" alt="">
+                <h3>Pavan Gopal Joshi</h3>
+                <h4>Software Developer at RapportSoft Technology</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Working as Java FullStack Developer with 1 years of Experience in IT Field.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>I’m always open to discussing new projects, collaborations, or opportunities. Feel free to reach out for technical help, freelance work, or just to connect with a fellow develope</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-5">
+
+          <div class="col-lg-4">
+  <div class="info-item d-flex align-items-center">
+    <a href="https://www.google.com/maps?q=Warje,+Pune,+Maharashtra" target="_blank" class="d-flex align-items-center text-decoration-none text-dark">
+      <i class="bi bi-geo-alt flex-shrink-0"></i>
+      <div class="ms-3">
+        <h3>Address</h3>
+        <p class="mb-0">Warje, Pune, Maharashtra</p>
+      </div>
+    </a>
+  </div>
+</div>
+<!-- End Info Item -->
+<div class="col-lg-4">
+  <div class="info-item d-flex align-items-center">
+    <a href="tel:9356706409">
+      <i class="bi bi-telephone flex-shrink-0" style="cursor: pointer;"></i>
+    </a>
+    <div>
+      <h3>Call Us</h3>
+      <p><a href="tel:9356706409">9356706409</a></p>
+    </div>
+  </div>
+</div>
+<!-- End Info Item -->
+
+           <div class="col-lg-4">
+  <div class="info-item d-flex align-items-center">
+    <a href="mailto:pavanjoshi8556@gmail.com">
+      <i class="bi bi-envelope flex-shrink-0" style="cursor: pointer;"></i>
+    </a>
+    <div>
+      <h3>Email Us</h3>
+      <p><a href="mailto:pavanjoshi8556@gmail.com">pavanjoshi8556@gmail.com</a></p>
+    </div>
+  </div>
+</div>
+
+          </div>
+        </div>
+
+<form id="contactForm" action="#" data-aos-delay="300">
+  <div class="row gy-4">
+
+    <div class="col-md-6">
+      <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required>
+    </div>
+
+    <div class="col-md-6">
+      <input type="email" id="email" class="form-control" name="email" placeholder="Your Email" required>
+    </div>
+
+    <div class="col-md-12">
+      <input type="text" id="subject" class="form-control" name="subject" placeholder="Subject" required>
+    </div>
+
+    <div class="col-md-12">
+      <textarea id="message" class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+    </div>
+
+    <div class="col-md-12 text-center">
+      <div id="alertBox" style="display:none; padding:10px; margin-bottom:10px; border-radius:5px; color:white;"></div>
+
+      <button type="button" onclick="submitbtn()">Send Message</button>
+    </div>
+
+  </div>
+</form>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer accent-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Pavan Gopal Joshi</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/pavanjoshi345"><i class="bi bi-github"></i></a>
+        <a href="https://www.instagram.com/pavan_programmer_18/#"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/pavan-joshi-a27089325"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="#">Pavan Joshi</a> 
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
